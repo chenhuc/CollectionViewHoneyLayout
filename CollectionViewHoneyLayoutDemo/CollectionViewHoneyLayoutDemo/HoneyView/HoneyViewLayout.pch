@@ -1,0 +1,15 @@
+//
+//  HoneyViewLayout.pch
+//  CollectionViewHoneyLayoutDemo
+//
+//  Created by CHC on 2016/10/20.
+//  Copyright © 2016年 CHC. All rights reserved.
+//
+
+#ifndef HoneyViewLayout_pch
+#define HoneyViewLayout_pch
+
+#import "CommonDefine.h"
+#import "Tools.h"
+
+#endif /* HoneyViewLayout_pch */
