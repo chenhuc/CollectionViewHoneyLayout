@@ -16,7 +16,7 @@
     if (self) {
         self.msgButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.msgButton addTarget:self action:@selector(msgButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-        self.msgButton.userInteractionEnabled = YES;
+//        self.msgButton.userInteractionEnabled = YES;
         [self.contentView addSubview:self.msgButton];
         self.backView = [UIImageView new];
         self.backView.userInteractionEnabled = YES;
@@ -31,9 +31,30 @@
 
 - (void)msgButtonClick:(UIButton *)btn
 {
-    NSLog(@"点击事件");
     if ([self.delegate respondsToSelector:@selector(didSelectItemAtCurrentPath:)]) {
         [self.delegate didSelectItemAtCurrentPath:self.currentPath];
+    }
+    else
+    {
+        NSLog(@"点击事件");
+    }
+}
+
+- (void)setIsRotation:(BOOL)isRotation
+{
+    _isRotation = isRotation;
+    if (isRotation) {
+        self.transform = CGAffineTransformMakeRotation(M_PI/2);
+        for (UIView *bView in self.contentView.subviews) {
+            bView.transform = CGAffineTransformMakeRotation(-M_PI/2);
+        }
+    }
+    else
+    {
+        self.transform = CGAffineTransformMakeRotation(M_PI*0);
+        for (UIView *bView in self.contentView.subviews) {
+            bView.transform = CGAffineTransformMakeRotation(M_PI*0);
+        }
     }
 }
 

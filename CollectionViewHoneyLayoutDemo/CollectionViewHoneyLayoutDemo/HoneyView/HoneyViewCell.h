@@ -48,6 +48,12 @@
 
 
 /**
+ *  rotation
+ */
+@property (nonatomic ,assign) BOOL isRotation;
+
+
+/**
  *  delegate
  */
 @property (nonatomic ,weak) id <HoneyViewCellDelegate>delegate;

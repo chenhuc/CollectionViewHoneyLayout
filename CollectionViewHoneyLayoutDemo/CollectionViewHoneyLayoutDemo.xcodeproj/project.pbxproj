@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D124FB71DB8B7CC0021A380 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D124FB61DB8B7CC0021A380 /* BaseViewController.m */; };
+		2D124FBA1DB8C0F50021A380 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D124FB91DB8C0F50021A380 /* Demo1ViewController.m */; };
+		2D124FBD1DB8C3690021A380 /* HoneyViewLayout2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D124FBC1DB8C3690021A380 /* HoneyViewLayout2.m */; };
 		2DA4C0AB1DB86A7C00740709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0AA1DB86A7C00740709 /* main.m */; };
 		2DA4C0AE1DB86A7C00740709 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0AD1DB86A7C00740709 /* AppDelegate.m */; };
-		2DA4C0B11DB86A7C00740709 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B01DB86A7C00740709 /* ViewController.m */; };
+		2DA4C0B11DB86A7C00740709 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B01DB86A7C00740709 /* DemoViewController.m */; };
 		2DA4C0B41DB86A7C00740709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B21DB86A7C00740709 /* Main.storyboard */; };
 		2DA4C0B61DB86A7C00740709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B51DB86A7C00740709 /* Assets.xcassets */; };
 		2DA4C0B91DB86A7C00740709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B71DB86A7C00740709 /* LaunchScreen.storyboard */; };
@@ -38,12 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D124FB51DB8B7CC0021A380 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		2D124FB61DB8B7CC0021A380 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		2D124FB81DB8C0F50021A380 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		2D124FB91DB8C0F50021A380 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		2D124FBB1DB8C3690021A380 /* HoneyViewLayout2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewLayout2.h; sourceTree = "<group>"; };
+		2D124FBC1DB8C3690021A380 /* HoneyViewLayout2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoneyViewLayout2.m; sourceTree = "<group>"; };
 		2DA4C0A61DB86A7C00740709 /* CollectionViewHoneyLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewHoneyLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA4C0AA1DB86A7C00740709 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DA4C0AC1DB86A7C00740709 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DA4C0AD1DB86A7C00740709 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DA4C0AF1DB86A7C00740709 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2DA4C0B01DB86A7C00740709 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DA4C0AF1DB86A7C00740709 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		2DA4C0B01DB86A7C00740709 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		2DA4C0B31DB86A7C00740709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DA4C0B51DB86A7C00740709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DA4C0B81DB86A7C00740709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,8 +124,12 @@
 				2DA4C0DC1DB86AE400740709 /* HoneyView */,
 				2DA4C0AC1DB86A7C00740709 /* AppDelegate.h */,
 				2DA4C0AD1DB86A7C00740709 /* AppDelegate.m */,
-				2DA4C0AF1DB86A7C00740709 /* ViewController.h */,
-				2DA4C0B01DB86A7C00740709 /* ViewController.m */,
+				2DA4C0AF1DB86A7C00740709 /* DemoViewController.h */,
+				2DA4C0B01DB86A7C00740709 /* DemoViewController.m */,
+				2D124FB81DB8C0F50021A380 /* Demo1ViewController.h */,
+				2D124FB91DB8C0F50021A380 /* Demo1ViewController.m */,
+				2D124FB51DB8B7CC0021A380 /* BaseViewController.h */,
+				2D124FB61DB8B7CC0021A380 /* BaseViewController.m */,
 				2DA4C0E61DB86C9600740709 /* Tools.h */,
 				2DA4C0E71DB86C9600740709 /* Tools.m */,
 				2DA4C0B21DB86A7C00740709 /* Main.storyboard */,
@@ -161,6 +174,8 @@
 				2DA4C0DE1DB86AE400740709 /* HoneyViewCell.m */,
 				2DA4C0DF1DB86AE400740709 /* HoneyViewLayout.h */,
 				2DA4C0E01DB86AE400740709 /* HoneyViewLayout.m */,
+				2D124FBB1DB8C3690021A380 /* HoneyViewLayout2.h */,
+				2D124FBC1DB8C3690021A380 /* HoneyViewLayout2.m */,
 				2DA4C0E31DB86B1000740709 /* HoneyViewLayout.pch */,
 				2DA4C0E51DB86BA200740709 /* CommonDefine.h */,
 			);
@@ -302,9 +317,12 @@
 			files = (
 				2DA4C0E21DB86AE400740709 /* HoneyViewLayout.m in Sources */,
 				2DA4C0E11DB86AE400740709 /* HoneyViewCell.m in Sources */,
-				2DA4C0B11DB86A7C00740709 /* ViewController.m in Sources */,
+				2DA4C0B11DB86A7C00740709 /* DemoViewController.m in Sources */,
 				2DA4C0E81DB86C9600740709 /* Tools.m in Sources */,
 				2DA4C0AE1DB86A7C00740709 /* AppDelegate.m in Sources */,
+				2D124FBD1DB8C3690021A380 /* HoneyViewLayout2.m in Sources */,
+				2D124FBA1DB8C0F50021A380 /* Demo1ViewController.m in Sources */,
+				2D124FB71DB8B7CC0021A380 /* BaseViewController.m in Sources */,
 				2DA4C0AB1DB86A7C00740709 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +557,7 @@
 				2DA4C0D51DB86A7C00740709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DA4C0D61DB86A7C00740709 /* Build configuration list for PBXNativeTarget "CollectionViewHoneyLayoutDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +566,7 @@
 				2DA4C0D81DB86A7C00740709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DA4C0D91DB86A7C00740709 /* Build configuration list for PBXNativeTarget "CollectionViewHoneyLayoutDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +575,7 @@
 				2DA4C0DB1DB86A7C00740709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

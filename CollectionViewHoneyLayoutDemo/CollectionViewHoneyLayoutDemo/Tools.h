@@ -12,9 +12,19 @@
 @interface Tools : NSObject
 
 /**
+ *  根据圆的半径生成圆形图片
+ */
++ (UIImage *)imageWithImage:(UIImage *)image radius:(CGFloat)radius;
+
+/**
  *  根据颜色生成图片
  */
 + (UIImage *)imageWithColor:(UIColor *)color;
+
+/**
+ *  根据颜色,尺寸生成图片
+ */
++ (UIImage *)imageWithColor:(UIColor *)color Size:(CGSize)size;
 
 /**
  *  随机颜色

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Demo1ViewController.h
 //  CollectionViewHoneyLayoutDemo
 //
 //  Created by CHC on 2016/10/20.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Demo1ViewController : UIViewController
 
 /**
  *  listView
@@ -19,5 +19,5 @@
  *  arrayData
  */
 @property (nonatomic ,strong) NSMutableArray *arrayData;
-@end
 
+@end

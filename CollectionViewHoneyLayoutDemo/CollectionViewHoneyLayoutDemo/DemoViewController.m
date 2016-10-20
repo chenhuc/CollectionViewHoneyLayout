@@ -6,11 +6,11 @@
 //  Copyright © 2016年 CHC. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DemoViewController.h"
 #import "HoneyViewCell.h"
 #import "HoneyViewLayout.h"
 
-@interface ViewController ()<UICollectionViewDelegate ,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,HoneyViewCellDelegate>
+@interface DemoViewController ()<UICollectionViewDelegate ,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,HoneyViewCellDelegate>
 
 @end
 
@@ -18,21 +18,57 @@
 static NSString *Identifier = @"ListViewIdentifier";
 
 
-@implementation ViewController
-
+@implementation DemoViewController
+{
+    BOOL isChange;
+    HoneyViewLayout *mainFlowLayout;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.arrayData = [NSMutableArray arrayWithObjects:@"0", @"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25", nil];
+    self.arrayData = [NSMutableArray arrayWithObjects:@"0", @"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12", nil];
+    mainFlowLayout.margin = 5;
+    [self configureNavigationItem];
     [self createMainListView];
+}
+- (void)configureNavigationItem
+{
+    UIBarButtonItem *rightItem1 = [[UIBarButtonItem alloc]initWithTitle:@"+" style:UIBarButtonItemStyleDone target:self action:@selector(addMargin)];
+    UIBarButtonItem *rightItem2 = [[UIBarButtonItem alloc]initWithTitle:@"-" style:UIBarButtonItemStyleDone target:self action:@selector(changeMargin)];
+    self.navigationItem.rightBarButtonItems = @[rightItem1,rightItem2];
+}
+
+- (void)addMargin
+{
+    if (mainFlowLayout.margin < 30 && mainFlowLayout.margin >= 0) {
+        mainFlowLayout.margin ++;
+    }
+    else
+    {
+        mainFlowLayout.margin = 30;
+        return ;
+    }
+    [self.mainCollectionView reloadData];
+}
+
+- (void)changeMargin
+{
+    if (mainFlowLayout.margin <= 30 && mainFlowLayout.margin > 0) {
+        mainFlowLayout.margin --;
+    }
+    else
+    {
+        mainFlowLayout.margin = 0;
+        return ;
+    }
+    [self.mainCollectionView reloadData];
 }
 
 - (void)createMainListView
 {
-    HoneyViewLayout *mainFlowLayout = [[HoneyViewLayout alloc]init];
+    mainFlowLayout = [[HoneyViewLayout alloc]init];
     mainFlowLayout.itemCount = self.arrayData.count;
-    mainFlowLayout.margin = 10;
     mainFlowLayout.TopMargin = 80;
     
     self.mainCollectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:mainFlowLayout];
@@ -58,7 +94,7 @@ static NSString *Identifier = @"ListViewIdentifier";
     HoneyViewCell *cell = (HoneyViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:Identifier forIndexPath:indexPath];
     cell.delegate = self;
     cell.currentPath = indexPath;
-    cell.backgroundColor = [UIColor purpleColor];
+    cell.backgroundColor = [Tools randomColor];
     [cell.msgButton setTitle:[self.arrayData objectAtIndex:indexPath.item] forState:UIControlStateNormal];
     cell.tipImageView.image = [Tools imageWithColor:[Tools randomColor]];
     return cell;

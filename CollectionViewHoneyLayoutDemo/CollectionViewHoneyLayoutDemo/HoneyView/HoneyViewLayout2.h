@@ -1,14 +1,14 @@
 //
-//  HoneyViewLayout.h
-//  MercedesBenz
+//  HoneyViewLayout2.h
+//  CollectionViewHoneyLayoutDemo
 //
-//  Created by CHC on 2016/10/19.
-//  Copyright © 2016年 BM. All rights reserved.
+//  Created by CHC on 2016/10/20.
+//  Copyright © 2016年 CHC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface HoneyViewLayout : UICollectionViewLayout
+@interface HoneyViewLayout2 : UICollectionViewLayout
 
 /**
  *  这个int值存储有多少个item
@@ -28,5 +28,6 @@
  *  偏移量
  */
 @property(nonatomic,assign) NSInteger contentSizeY;
+
 
 @end
