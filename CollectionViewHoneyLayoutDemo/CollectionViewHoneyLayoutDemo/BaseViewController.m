@@ -30,11 +30,14 @@ static NSString *personIdentifier = @"personListViewIdentifier";
 {
     self.personDataArray = [[NSMutableArray alloc] init];
     self.classDataArray = [[NSMutableArray alloc] init];
-    [self.personDataArray addObject:@"正六边形居中布局1"];
+    [self.personDataArray addObject:@"正六边形居中布局修改间距"];
     [self.classDataArray addObject:@"DemoViewController"];
     
-    [self.personDataArray addObject:@"正六边形居中布局2"];
+    [self.personDataArray addObject:@"正六边形居中布局旋转"];
     [self.classDataArray addObject:@"Demo1ViewController"];
+    
+    [self.personDataArray addObject:@"正n边形居中布局"];
+    [self.classDataArray addObject:@"Demo2ViewController"];
 }
 
 - (void)createPersonListView

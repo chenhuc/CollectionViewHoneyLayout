@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D124FB71DB8B7CC0021A380 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D124FB61DB8B7CC0021A380 /* BaseViewController.m */; };
-		2D124FBA1DB8C0F50021A380 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D124FB91DB8C0F50021A380 /* Demo1ViewController.m */; };
-		2D124FBD1DB8C3690021A380 /* HoneyViewLayout2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D124FBC1DB8C3690021A380 /* HoneyViewLayout2.m */; };
-		2DA4C0AB1DB86A7C00740709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0AA1DB86A7C00740709 /* main.m */; };
-		2DA4C0AE1DB86A7C00740709 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0AD1DB86A7C00740709 /* AppDelegate.m */; };
-		2DA4C0B11DB86A7C00740709 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B01DB86A7C00740709 /* DemoViewController.m */; };
-		2DA4C0B41DB86A7C00740709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B21DB86A7C00740709 /* Main.storyboard */; };
-		2DA4C0B61DB86A7C00740709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B51DB86A7C00740709 /* Assets.xcassets */; };
-		2DA4C0B91DB86A7C00740709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4C0B71DB86A7C00740709 /* LaunchScreen.storyboard */; };
 		2DA4C0C41DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0C31DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests.m */; };
 		2DA4C0CF1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0CE1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoUITests.m */; };
-		2DA4C0E11DB86AE400740709 /* HoneyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0DE1DB86AE400740709 /* HoneyViewCell.m */; };
-		2DA4C0E21DB86AE400740709 /* HoneyViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0E01DB86AE400740709 /* HoneyViewLayout.m */; };
-		2DA4C0E81DB86C9600740709 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0E71DB86C9600740709 /* Tools.m */; };
+		2DA523B41DBA10990099D25D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5238E1DBA10990099D25D /* AppDelegate.m */; };
+		2DA523B51DBA10990099D25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA5238F1DBA10990099D25D /* Assets.xcassets */; };
+		2DA523B61DBA10990099D25D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA523901DBA10990099D25D /* LaunchScreen.storyboard */; };
+		2DA523B71DBA10990099D25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA523921DBA10990099D25D /* Main.storyboard */; };
+		2DA523B81DBA10990099D25D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523951DBA10990099D25D /* BaseViewController.m */; };
+		2DA523B91DBA10990099D25D /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523981DBA10990099D25D /* Demo1ViewController.m */; };
+		2DA523BA1DBA10990099D25D /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5239A1DBA10990099D25D /* Demo2ViewController.m */; };
+		2DA523BD1DBA10990099D25D /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523A01DBA10990099D25D /* DemoViewController.m */; };
+		2DA523BE1DBA10990099D25D /* HoneyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523A31DBA10990099D25D /* HoneyViewCell.m */; };
+		2DA523BF1DBA10990099D25D /* HoneyViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523A51DBA10990099D25D /* HoneyViewLayout.m */; };
+		2DA523C01DBA10990099D25D /* HoneyViewLayout2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523A71DBA10990099D25D /* HoneyViewLayout2.m */; };
+		2DA523C21DBA10990099D25D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523AA1DBA10990099D25D /* main.m */; };
+		2DA523C31DBA10990099D25D /* PolygonSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523AD1DBA10990099D25D /* PolygonSingle.m */; };
+		2DA523C41DBA10990099D25D /* PolygonViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523AF1DBA10990099D25D /* PolygonViewCell.m */; };
+		2DA523C51DBA10990099D25D /* PolygonViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523B11DBA10990099D25D /* PolygonViewLayout.m */; };
+		2DA523C61DBA10990099D25D /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523B31DBA10990099D25D /* Tools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,36 +45,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D124FB51DB8B7CC0021A380 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		2D124FB61DB8B7CC0021A380 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		2D124FB81DB8C0F50021A380 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
-		2D124FB91DB8C0F50021A380 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
-		2D124FBB1DB8C3690021A380 /* HoneyViewLayout2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewLayout2.h; sourceTree = "<group>"; };
-		2D124FBC1DB8C3690021A380 /* HoneyViewLayout2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoneyViewLayout2.m; sourceTree = "<group>"; };
 		2DA4C0A61DB86A7C00740709 /* CollectionViewHoneyLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewHoneyLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DA4C0AA1DB86A7C00740709 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2DA4C0AC1DB86A7C00740709 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2DA4C0AD1DB86A7C00740709 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DA4C0AF1DB86A7C00740709 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
-		2DA4C0B01DB86A7C00740709 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
-		2DA4C0B31DB86A7C00740709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2DA4C0B51DB86A7C00740709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2DA4C0B81DB86A7C00740709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2DA4C0BA1DB86A7C00740709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DA4C0BF1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewHoneyLayoutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA4C0C31DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHoneyLayoutDemoTests.m; sourceTree = "<group>"; };
 		2DA4C0C51DB86A7C00740709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DA4C0CA1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewHoneyLayoutDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA4C0CE1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHoneyLayoutDemoUITests.m; sourceTree = "<group>"; };
 		2DA4C0D01DB86A7C00740709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DA4C0DD1DB86AE400740709 /* HoneyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewCell.h; sourceTree = "<group>"; };
-		2DA4C0DE1DB86AE400740709 /* HoneyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoneyViewCell.m; sourceTree = "<group>"; };
-		2DA4C0DF1DB86AE400740709 /* HoneyViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewLayout.h; sourceTree = "<group>"; };
-		2DA4C0E01DB86AE400740709 /* HoneyViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoneyViewLayout.m; sourceTree = "<group>"; };
-		2DA4C0E31DB86B1000740709 /* HoneyViewLayout.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewLayout.pch; sourceTree = "<group>"; };
-		2DA4C0E51DB86BA200740709 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
-		2DA4C0E61DB86C9600740709 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
-		2DA4C0E71DB86C9600740709 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		2DA5238D1DBA10990099D25D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DA5238E1DBA10990099D25D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DA5238F1DBA10990099D25D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA523911DBA10990099D25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DA523931DBA10990099D25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DA523941DBA10990099D25D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		2DA523951DBA10990099D25D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		2DA523961DBA10990099D25D /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		2DA523971DBA10990099D25D /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		2DA523981DBA10990099D25D /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		2DA523991DBA10990099D25D /* Demo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
+		2DA5239A1DBA10990099D25D /* Demo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
+		2DA5239F1DBA10990099D25D /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		2DA523A01DBA10990099D25D /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		2DA523A21DBA10990099D25D /* HoneyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewCell.h; sourceTree = "<group>"; };
+		2DA523A31DBA10990099D25D /* HoneyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoneyViewCell.m; sourceTree = "<group>"; };
+		2DA523A41DBA10990099D25D /* HoneyViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewLayout.h; sourceTree = "<group>"; };
+		2DA523A51DBA10990099D25D /* HoneyViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoneyViewLayout.m; sourceTree = "<group>"; };
+		2DA523A61DBA10990099D25D /* HoneyViewLayout2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewLayout2.h; sourceTree = "<group>"; };
+		2DA523A71DBA10990099D25D /* HoneyViewLayout2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoneyViewLayout2.m; sourceTree = "<group>"; };
+		2DA523A81DBA10990099D25D /* HoneyViewLayout.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoneyViewLayout.pch; sourceTree = "<group>"; };
+		2DA523A91DBA10990099D25D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA523AA1DBA10990099D25D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DA523AC1DBA10990099D25D /* PolygonSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonSingle.h; sourceTree = "<group>"; };
+		2DA523AD1DBA10990099D25D /* PolygonSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonSingle.m; sourceTree = "<group>"; };
+		2DA523AE1DBA10990099D25D /* PolygonViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonViewCell.h; sourceTree = "<group>"; };
+		2DA523AF1DBA10990099D25D /* PolygonViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonViewCell.m; sourceTree = "<group>"; };
+		2DA523B01DBA10990099D25D /* PolygonViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonViewLayout.h; sourceTree = "<group>"; };
+		2DA523B11DBA10990099D25D /* PolygonViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonViewLayout.m; sourceTree = "<group>"; };
+		2DA523B21DBA10990099D25D /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		2DA523B31DBA10990099D25D /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +113,7 @@
 		2DA4C09D1DB86A7C00740709 = {
 			isa = PBXGroup;
 			children = (
-				2DA4C0A81DB86A7C00740709 /* CollectionViewHoneyLayoutDemo */,
+				2DA5238C1DBA10990099D25D /* CollectionViewHoneyLayoutDemo */,
 				2DA4C0C21DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests */,
 				2DA4C0CD1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoUITests */,
 				2DA4C0A71DB86A7C00740709 /* Products */,
@@ -116,37 +128,6 @@
 				2DA4C0CA1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2DA4C0A81DB86A7C00740709 /* CollectionViewHoneyLayoutDemo */ = {
-			isa = PBXGroup;
-			children = (
-				2DA4C0DC1DB86AE400740709 /* HoneyView */,
-				2DA4C0AC1DB86A7C00740709 /* AppDelegate.h */,
-				2DA4C0AD1DB86A7C00740709 /* AppDelegate.m */,
-				2DA4C0AF1DB86A7C00740709 /* DemoViewController.h */,
-				2DA4C0B01DB86A7C00740709 /* DemoViewController.m */,
-				2D124FB81DB8C0F50021A380 /* Demo1ViewController.h */,
-				2D124FB91DB8C0F50021A380 /* Demo1ViewController.m */,
-				2D124FB51DB8B7CC0021A380 /* BaseViewController.h */,
-				2D124FB61DB8B7CC0021A380 /* BaseViewController.m */,
-				2DA4C0E61DB86C9600740709 /* Tools.h */,
-				2DA4C0E71DB86C9600740709 /* Tools.m */,
-				2DA4C0B21DB86A7C00740709 /* Main.storyboard */,
-				2DA4C0B51DB86A7C00740709 /* Assets.xcassets */,
-				2DA4C0B71DB86A7C00740709 /* LaunchScreen.storyboard */,
-				2DA4C0BA1DB86A7C00740709 /* Info.plist */,
-				2DA4C0A91DB86A7C00740709 /* Supporting Files */,
-			);
-			path = CollectionViewHoneyLayoutDemo;
-			sourceTree = "<group>";
-		};
-		2DA4C0A91DB86A7C00740709 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2DA4C0AA1DB86A7C00740709 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2DA4C0C21DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests */ = {
@@ -167,19 +148,58 @@
 			path = CollectionViewHoneyLayoutDemoUITests;
 			sourceTree = "<group>";
 		};
-		2DA4C0DC1DB86AE400740709 /* HoneyView */ = {
+		2DA5238C1DBA10990099D25D /* CollectionViewHoneyLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2DA4C0DD1DB86AE400740709 /* HoneyViewCell.h */,
-				2DA4C0DE1DB86AE400740709 /* HoneyViewCell.m */,
-				2DA4C0DF1DB86AE400740709 /* HoneyViewLayout.h */,
-				2DA4C0E01DB86AE400740709 /* HoneyViewLayout.m */,
-				2D124FBB1DB8C3690021A380 /* HoneyViewLayout2.h */,
-				2D124FBC1DB8C3690021A380 /* HoneyViewLayout2.m */,
-				2DA4C0E31DB86B1000740709 /* HoneyViewLayout.pch */,
-				2DA4C0E51DB86BA200740709 /* CommonDefine.h */,
+				2DA5238D1DBA10990099D25D /* AppDelegate.h */,
+				2DA5238E1DBA10990099D25D /* AppDelegate.m */,
+				2DA5238F1DBA10990099D25D /* Assets.xcassets */,
+				2DA523901DBA10990099D25D /* LaunchScreen.storyboard */,
+				2DA523921DBA10990099D25D /* Main.storyboard */,
+				2DA523941DBA10990099D25D /* BaseViewController.h */,
+				2DA523951DBA10990099D25D /* BaseViewController.m */,
+				2DA523961DBA10990099D25D /* CommonDefine.h */,
+				2DA523971DBA10990099D25D /* Demo1ViewController.h */,
+				2DA523981DBA10990099D25D /* Demo1ViewController.m */,
+				2DA523991DBA10990099D25D /* Demo2ViewController.h */,
+				2DA5239A1DBA10990099D25D /* Demo2ViewController.m */,
+				2DA5239F1DBA10990099D25D /* DemoViewController.h */,
+				2DA523A01DBA10990099D25D /* DemoViewController.m */,
+				2DA523A11DBA10990099D25D /* HoneyView */,
+				2DA523A81DBA10990099D25D /* HoneyViewLayout.pch */,
+				2DA523A91DBA10990099D25D /* Info.plist */,
+				2DA523AA1DBA10990099D25D /* main.m */,
+				2DA523AB1DBA10990099D25D /* PolygonView */,
+				2DA523B21DBA10990099D25D /* Tools.h */,
+				2DA523B31DBA10990099D25D /* Tools.m */,
+			);
+			path = CollectionViewHoneyLayoutDemo;
+			sourceTree = "<group>";
+		};
+		2DA523A11DBA10990099D25D /* HoneyView */ = {
+			isa = PBXGroup;
+			children = (
+				2DA523A21DBA10990099D25D /* HoneyViewCell.h */,
+				2DA523A31DBA10990099D25D /* HoneyViewCell.m */,
+				2DA523A41DBA10990099D25D /* HoneyViewLayout.h */,
+				2DA523A51DBA10990099D25D /* HoneyViewLayout.m */,
+				2DA523A61DBA10990099D25D /* HoneyViewLayout2.h */,
+				2DA523A71DBA10990099D25D /* HoneyViewLayout2.m */,
 			);
 			path = HoneyView;
+			sourceTree = "<group>";
+		};
+		2DA523AB1DBA10990099D25D /* PolygonView */ = {
+			isa = PBXGroup;
+			children = (
+				2DA523AC1DBA10990099D25D /* PolygonSingle.h */,
+				2DA523AD1DBA10990099D25D /* PolygonSingle.m */,
+				2DA523AE1DBA10990099D25D /* PolygonViewCell.h */,
+				2DA523AF1DBA10990099D25D /* PolygonViewCell.m */,
+				2DA523B01DBA10990099D25D /* PolygonViewLayout.h */,
+				2DA523B11DBA10990099D25D /* PolygonViewLayout.m */,
+			);
+			path = PolygonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,9 +308,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA4C0B91DB86A7C00740709 /* LaunchScreen.storyboard in Resources */,
-				2DA4C0B61DB86A7C00740709 /* Assets.xcassets in Resources */,
-				2DA4C0B41DB86A7C00740709 /* Main.storyboard in Resources */,
+				2DA523B71DBA10990099D25D /* Main.storyboard in Resources */,
+				2DA523B51DBA10990099D25D /* Assets.xcassets in Resources */,
+				2DA523B61DBA10990099D25D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,15 +335,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA4C0E21DB86AE400740709 /* HoneyViewLayout.m in Sources */,
-				2DA4C0E11DB86AE400740709 /* HoneyViewCell.m in Sources */,
-				2DA4C0B11DB86A7C00740709 /* DemoViewController.m in Sources */,
-				2DA4C0E81DB86C9600740709 /* Tools.m in Sources */,
-				2DA4C0AE1DB86A7C00740709 /* AppDelegate.m in Sources */,
-				2D124FBD1DB8C3690021A380 /* HoneyViewLayout2.m in Sources */,
-				2D124FBA1DB8C0F50021A380 /* Demo1ViewController.m in Sources */,
-				2D124FB71DB8B7CC0021A380 /* BaseViewController.m in Sources */,
-				2DA4C0AB1DB86A7C00740709 /* main.m in Sources */,
+				2DA523BE1DBA10990099D25D /* HoneyViewCell.m in Sources */,
+				2DA523BF1DBA10990099D25D /* HoneyViewLayout.m in Sources */,
+				2DA523B41DBA10990099D25D /* AppDelegate.m in Sources */,
+				2DA523C41DBA10990099D25D /* PolygonViewCell.m in Sources */,
+				2DA523B91DBA10990099D25D /* Demo1ViewController.m in Sources */,
+				2DA523C51DBA10990099D25D /* PolygonViewLayout.m in Sources */,
+				2DA523C61DBA10990099D25D /* Tools.m in Sources */,
+				2DA523C31DBA10990099D25D /* PolygonSingle.m in Sources */,
+				2DA523BA1DBA10990099D25D /* Demo2ViewController.m in Sources */,
+				2DA523B81DBA10990099D25D /* BaseViewController.m in Sources */,
+				2DA523BD1DBA10990099D25D /* DemoViewController.m in Sources */,
+				2DA523C21DBA10990099D25D /* main.m in Sources */,
+				2DA523C01DBA10990099D25D /* HoneyViewLayout2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,20 +383,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2DA4C0B21DB86A7C00740709 /* Main.storyboard */ = {
+		2DA523901DBA10990099D25D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2DA4C0B31DB86A7C00740709 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2DA4C0B71DB86A7C00740709 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DA4C0B81DB86A7C00740709 /* Base */,
+				2DA523911DBA10990099D25D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2DA523921DBA10990099D25D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA523931DBA10990099D25D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -470,7 +494,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/CollectionViewHoneyLayoutDemo/HoneyView/HoneyViewLayout.pch";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CollectionViewHoneyLayoutDemo/HoneyViewLayout.pch";
 				INFOPLIST_FILE = CollectionViewHoneyLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -483,7 +508,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/HoneyView/HoneyViewLayout.pch";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CollectionViewHoneyLayoutDemo/HoneyViewLayout.pch";
 				INFOPLIST_FILE = CollectionViewHoneyLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

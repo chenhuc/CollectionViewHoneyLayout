@@ -14,11 +14,13 @@
 #define Device_height   [UIScreen mainScreen].bounds.size.height
 
 
+#define ChangePolygonNumber  "PolygonNumber"
+
 #define mm (Device_width - 100)/5
 
 #define CC(b)           cos(M_PI *30/180)*(b)
 #define CS(b)           sin(M_PI *30/180)*(b)
 #define CST(a)          sin(M_PI*90/180)*(a)
-
-
+#define COS(a)          cos(M_PI *a/180)
+#define SIN(a)          sin(M_PI *a/180)
 #endif /* CommonDefine_h */
