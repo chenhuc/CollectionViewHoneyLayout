@@ -43,7 +43,7 @@ static NSString *demo2Identifier = @"demo2ListViewIdentifier";
 - (void)numberClickAction
 {
     if (!isAdd) {
-        if (mainFlowLayout.number < 12 && mainFlowLayout.number >= 3) {
+        if (mainFlowLayout.number < 30 && mainFlowLayout.number >= 3) {
             mainFlowLayout.number ++;
         }
         else
@@ -54,7 +54,7 @@ static NSString *demo2Identifier = @"demo2ListViewIdentifier";
     }
     else
     {
-        if (mainFlowLayout.number <= 12 && mainFlowLayout.number > 3) {
+        if (mainFlowLayout.number <= 30 && mainFlowLayout.number > 3) {
             mainFlowLayout.number --;
             
         }
