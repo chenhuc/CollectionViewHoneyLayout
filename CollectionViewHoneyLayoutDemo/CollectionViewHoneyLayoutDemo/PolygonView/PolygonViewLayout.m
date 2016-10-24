@@ -25,7 +25,7 @@
         CGFloat Y = self.TopMargin;
         int num = i%3 == 2? -1:i%3;
         int num2 = i%3 == 2? 1:i%3;
-        X += CST(-num)*([self judgeYWithNumber:self.number]);
+        X += CST(-num)*([self judgeXWithNumber:self.number]);
         Y += ([self judgeSizeWithNumber:self.number].height + self.margin)*(i/3) + CST(num2)*([self judgeSizeWithNumber:self.number].height/2)+self.margin;
         UICollectionViewLayoutAttributes *attribute = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
         // 设置每隔item的大小
@@ -37,7 +37,8 @@
     }
 }
 
-- (CGFloat)judgeYWithNumber:(NSInteger)xNumber
+// X轴方向的间隔
+- (CGFloat)judgeXWithNumber:(NSInteger)xNumber
 {
     if (xNumber == 3 ) {
         return mm + self.margin - COS(360/xNumber)*mm;
@@ -64,6 +65,7 @@
     }
 }
 
+// 就算正n变形的大小
 - (CGSize)judgeSizeWithNumber:(NSInteger)sNumber
 {
     if (sNumber == 3 || sNumber == 6 ) {

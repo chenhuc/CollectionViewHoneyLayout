@@ -38,12 +38,12 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    // step 1: 绘制正n变形
     CGFloat X = self.contentView.frame.size.width  * 0.5;
     CGFloat Y = self.contentView.frame.size.height * 0.5;
-//    CGPoint point = CGPointMake(X, Y);
     UIBezierPath* bezierPath = [UIBezierPath bezierPath];
-//    bezierPath.lineCapStyle = kCGLineCapRound;
-//    bezierPath.lineJoinStyle = kCGLineCapRound;
+    bezierPath.lineCapStyle = kCGLineCapRound;
+    bezierPath.lineJoinStyle = kCGLineCapRound;
     CGFloat angle = labs(360/self.number);
     [bezierPath moveToPoint: CGPointMake(X - mm , Y)];
     for (int i = 0; i < self.number - 1; i ++) {
@@ -57,7 +57,7 @@
     CAShapeLayer *maskLayer = [CAShapeLayer layer];
     maskLayer.path = [bezierPath CGPath];
     
-//    self.backgroundColor = [UIColor redColor];
+    self.backgroundColor = [UIColor redColor];
     // step 3: 给cell添加模版
     self.layer.mask = maskLayer;
     self.titleLabel.frame = self.bounds;
