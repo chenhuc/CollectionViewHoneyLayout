@@ -8,8 +8,7 @@
 
 #import "CollectionViewViewController.h"
 
-@interface CollectionViewViewController ()
-
+@interface CollectionViewViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @end
 
 
@@ -21,52 +20,92 @@ static NSString *mainIndetifier = @"mainViewIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self createMainListView];
 }
     
 - (void)createMainListView
     {
         UICollectionViewFlowLayout *mainFlowLayout = [[UICollectionViewFlowLayout alloc]init];
         mainFlowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-        mainFlowLayout.itemSize = CGSizeMake((Device_width - 15)/2, (Device_width - 15)/2 + 20);
-        mainFlowLayout.minimumLineSpacing = 5;
-        mainFlowLayout.minimumInteritemSpacing = 5;
-        mainFlowLayout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
+        mainFlowLayout.itemSize = CGSizeMake((Device_width - 2.25)/2, (Device_width - 2.25)/2 + 20);
+        mainFlowLayout.minimumLineSpacing = 0.75;
+        mainFlowLayout.minimumInteritemSpacing = 0.75;
+        mainFlowLayout.sectionInset = UIEdgeInsetsMake(0, 0.75, 0, 0.75);
         
-        self.mainListView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, Device_width, Device_height - 64 - 49) collectionViewLayout:mainFlowLayout];
+        self.mainListView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, Device_width, Device_height - 64) collectionViewLayout:mainFlowLayout];
         self.mainListView.delegate = self;
         self.mainListView.dataSource = self;
-        self.mainListView.prefetchDataSource = self;
         self.mainListView.backgroundColor = [UIColor whiteColor];
         [self.mainListView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:mainIndetifier];
         [self.view addSubview:self.mainListView];
     }
     
 - (void)addMainListViewMJRefresh
-    {
-        
-    }
+{
+    
+}
     
 #pragma mark ------ collection ---------
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-    {
-        return 20;
-    }
+{
+    return 20;
+}
     
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-    {
-        UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:mainIndetifier forIndexPath:indexPath];
-        cell.backgroundColor = [UIColor purpleColor];
-        return cell;
-    }
-    
-- (void)collectionView:(UICollectionView *)collectionView prefetchItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths
-    {
-        
-    }
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:mainIndetifier forIndexPath:indexPath];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, (cell.contentView.frame.size.height - 20)/2, cell.contentView.frame.size.width, 20)];
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.text = [NSString stringWithFormat:@"%ld",(long)indexPath.item];
+    [cell.contentView addSubview:label];
+    cell.backgroundColor = [UIColor lightGrayColor];
+    return cell;
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-    {
-        NSLog(@"当前点击的是%lditem",(long)indexPath.item);
+{
+    NSLog(@"当前点击的是%lditem",(long)indexPath.item);
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor purpleColor];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor lightGrayColor];
+}
+
+#pragma mark -------- collectionMenuView ----------
+// 是否显示菜单
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+// 菜单中哪些编辑操作可以显示
+- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+    if (indexPath.item == 2 || indexPath.item == 3) {
+        return YES;
     }
+    return NO;
+}
+// 对于显示的编辑操作怎么执行
+- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+    if (action == @selector(cut:)) {
+        NSLog(@"点击的是剪切***Cut");
+    }
+    else if (action == @selector(copy:)) {
+        NSLog(@"点击的是赋值***Copy");
+    }
+    else  {
+        NSLog(@"点击的是粘贴***Paste");
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
