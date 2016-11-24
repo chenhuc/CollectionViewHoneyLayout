@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D8B04681DE582D3008C157F /* CollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B04671DE582D3008C157F /* CollectionViewViewController.m */; };
 		2DA4C0C41DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0C31DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests.m */; };
 		2DA4C0CF1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4C0CE1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoUITests.m */; };
 		2DA523B41DBA10990099D25D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5238E1DBA10990099D25D /* AppDelegate.m */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D8B04661DE582D3008C157F /* CollectionViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewViewController.h; sourceTree = "<group>"; };
+		2D8B04671DE582D3008C157F /* CollectionViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewViewController.m; sourceTree = "<group>"; };
 		2DA4C0A61DB86A7C00740709 /* CollectionViewHoneyLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewHoneyLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA4C0BF1DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewHoneyLayoutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA4C0C31DB86A7C00740709 /* CollectionViewHoneyLayoutDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHoneyLayoutDemoTests.m; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				2DA5239A1DBA10990099D25D /* Demo2ViewController.m */,
 				2DA5239F1DBA10990099D25D /* DemoViewController.h */,
 				2DA523A01DBA10990099D25D /* DemoViewController.m */,
+				2D8B04661DE582D3008C157F /* CollectionViewViewController.h */,
+				2D8B04671DE582D3008C157F /* CollectionViewViewController.m */,
 				2DA523A11DBA10990099D25D /* HoneyView */,
 				2DA523A81DBA10990099D25D /* HoneyViewLayout.pch */,
 				2DA523A91DBA10990099D25D /* Info.plist */,
@@ -264,7 +269,7 @@
 		2DA4C09E1DB86A7C00740709 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = CHC;
 				TargetAttributes = {
 					2DA4C0A51DB86A7C00740709 = {
@@ -340,6 +345,7 @@
 				2DA523B41DBA10990099D25D /* AppDelegate.m in Sources */,
 				2DA523C41DBA10990099D25D /* PolygonViewCell.m in Sources */,
 				2DA523B91DBA10990099D25D /* Demo1ViewController.m in Sources */,
+				2D8B04681DE582D3008C157F /* CollectionViewViewController.m in Sources */,
 				2DA523C51DBA10990099D25D /* PolygonViewLayout.m in Sources */,
 				2DA523C61DBA10990099D25D /* Tools.m in Sources */,
 				2DA523C31DBA10990099D25D /* PolygonSingle.m in Sources */,
@@ -420,6 +426,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -467,6 +474,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

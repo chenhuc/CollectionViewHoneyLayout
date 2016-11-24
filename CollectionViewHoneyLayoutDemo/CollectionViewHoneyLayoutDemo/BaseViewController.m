@@ -38,6 +38,8 @@ static NSString *personIdentifier = @"personListViewIdentifier";
     
     [self.personDataArray addObject:@"正n边形居中布局"];
     [self.classDataArray addObject:@"Demo2ViewController"];
+    [self.personDataArray addObject:@"普通CollectionView"];
+    [self.classDataArray addObject:@"CollectionViewViewController"];
 }
 
 - (void)createPersonListView
@@ -89,6 +91,7 @@ static NSString *personIdentifier = @"personListViewIdentifier";
     NSLog(@"当前选中的第%ld行",(long)indexPath.row);
     UIViewController *VC = [[NSClassFromString(self.classDataArray[indexPath.row]) alloc] init];
     VC.navigationItem.title = self.personDataArray[indexPath.row];
+    VC.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:VC animated:YES];
 }
 
