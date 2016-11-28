@@ -8,7 +8,7 @@
 
 #import "CollectionViewViewController.h"
 
-@interface CollectionViewViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface CollectionViewViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIGestureRecognizerDelegate>
 @end
 
 
@@ -16,7 +16,9 @@ static NSString *mainIndetifier = @"mainViewIdentifier";
 
 
 @implementation CollectionViewViewController
-
+{
+    UILongPressGestureRecognizer *mainPress;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -25,25 +27,72 @@ static NSString *mainIndetifier = @"mainViewIdentifier";
 }
     
 - (void)createMainListView
-    {
-        UICollectionViewFlowLayout *mainFlowLayout = [[UICollectionViewFlowLayout alloc]init];
-        mainFlowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-        mainFlowLayout.itemSize = CGSizeMake((Device_width - 2.25)/2, (Device_width - 2.25)/2 + 20);
-        mainFlowLayout.minimumLineSpacing = 0.75;
-        mainFlowLayout.minimumInteritemSpacing = 0.75;
-        mainFlowLayout.sectionInset = UIEdgeInsetsMake(0, 0.75, 0, 0.75);
-        
-        self.mainListView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, Device_width, Device_height - 64) collectionViewLayout:mainFlowLayout];
-        self.mainListView.delegate = self;
-        self.mainListView.dataSource = self;
-        self.mainListView.backgroundColor = [UIColor whiteColor];
-        [self.mainListView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:mainIndetifier];
-        [self.view addSubview:self.mainListView];
-    }
-    
-- (void)addMainListViewMJRefresh
 {
+    UICollectionViewFlowLayout *mainFlowLayout = [[UICollectionViewFlowLayout alloc]init];
+    mainFlowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    mainFlowLayout.itemSize = CGSizeMake((Device_width - 2.25)/2, (Device_width - 2.25)/2 + 20);
+    mainFlowLayout.minimumLineSpacing = 0.75;
+    mainFlowLayout.minimumInteritemSpacing = 0.75;
+    mainFlowLayout.sectionInset = UIEdgeInsetsMake(0, 0.75, 0, 0.75);
     
+    self.mainListView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, Device_width, Device_height - 64) collectionViewLayout:mainFlowLayout];
+    self.mainListView.delegate = self;
+    self.mainListView.dataSource = self;
+    self.mainListView.backgroundColor = [UIColor whiteColor];
+    [self.mainListView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:mainIndetifier];
+    [self.view addSubview:self.mainListView];
+    mainPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(mainListViewLongpressClick)];
+    mainPress.delegate = self;
+    [self.mainListView addGestureRecognizer:mainPress];
+}
+
+-(BOOL )gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    touch.view.backgroundColor = [UIColor orangeColor];
+    if (touch.view != self.mainListView) {
+        return YES;
+    }
+    return NO;
+}
+    
+- (void)mainListViewLongpressClick
+{
+    switch (mainPress.state) {
+        case UIGestureRecognizerStateBegan:
+            {
+                //判断手势落点位置是否在路径上
+                NSIndexPath *selectIndexPath = [self.mainListView indexPathForItemAtPoint:[mainPress locationInView:self.mainListView]];
+                // 找到当前的cell
+                if (selectIndexPath == nil) {
+                    break;
+                }
+                UICollectionViewCell *cell = (UICollectionViewCell *)[self.mainListView cellForItemAtIndexPath:selectIndexPath];
+                cell.contentView.backgroundColor = [UIColor greenColor];
+                // 定义cell的时候btn是隐藏的, 在这里设置为NO
+//                [cell.btnDelete setHidden:NO];
+                //在路径上则开始移动该路径上的cell
+                [self.mainListView beginInteractiveMovementForItemAtIndexPath:selectIndexPath];
+            }
+            break;
+        case UIGestureRecognizerStateChanged:
+        {
+            //移动过程当中随时更新cell位置
+            [self.mainListView updateInteractiveMovementTargetPosition:[mainPress locationInView:mainPress.view]];
+        }
+            break;
+        case UIGestureRecognizerStateEnded:
+        {
+            [self.mainListView endInteractiveMovement];
+            
+        }
+            break;
+            
+        default:
+        {
+            [self.mainListView cancelInteractiveMovement];
+        }
+            break;
+    }
 }
     
 #pragma mark ------ collection ---------
@@ -75,6 +124,21 @@ static NSString *mainIndetifier = @"mainViewIdentifier";
 {
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     cell.contentView.backgroundColor = [UIColor lightGrayColor];
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    NSIndexPath *selectIndexPath = [self.mainListView indexPathForItemAtPoint:[mainPress locationInView:self.mainListView]];
+    // 找到当前的cell
+    UICollectionViewCell *cell = (UICollectionViewCell *)[self.mainListView cellForItemAtIndexPath:selectIndexPath];
+    cell.contentView.backgroundColor = [UIColor lightGrayColor];
+    [self.mainDataArray exchangeObjectAtIndex:sourceIndexPath.item withObjectAtIndex:destinationIndexPath.item];
+    [self.mainListView reloadData];
 }
 
 #pragma mark -------- collectionMenuView ----------

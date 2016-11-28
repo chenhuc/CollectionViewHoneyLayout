@@ -274,6 +274,7 @@
 				TargetAttributes = {
 					2DA4C0A51DB86A7C00740709 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PYAN2G4D94;
 						ProvisioningStyle = Automatic;
 					};
 					2DA4C0BE1DB86A7C00740709 = {
@@ -449,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -491,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -502,12 +503,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PYAN2G4D94;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CollectionViewHoneyLayoutDemo/HoneyViewLayout.pch";
 				INFOPLIST_FILE = CollectionViewHoneyLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hupo.CollectionViewHoneyLayoutDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = hupo.BenzClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -516,12 +518,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PYAN2G4D94;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CollectionViewHoneyLayoutDemo/HoneyViewLayout.pch";
 				INFOPLIST_FILE = CollectionViewHoneyLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hupo.CollectionViewHoneyLayoutDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = hupo.BenzClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
