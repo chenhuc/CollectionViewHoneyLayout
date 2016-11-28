@@ -3,9 +3,9 @@
 ============
 #DemoGitImage
 ---------
-![image](https://github.com/chenhuc/CollectionViewHoneyLayout/blob/master/1.gif)
-![image](https://github.com/chenhuc/CollectionViewHoneyLayout/blob/master/2.gif)
-![image](https://github.com/chenhuc/CollectionViewHoneyLayout/blob/master/3.gif)
+![image](https://github.com/chenhuc/CollectionViewHoneyLayout/blob/master/GifImage/1.gif)
+![image](https://github.com/chenhuc/CollectionViewHoneyLayout/blob/master/GifImage/2.gif)
+![image](https://github.com/chenhuc/CollectionViewHoneyLayout/blob/master/GifImage/3.gif)
 
                     1. 布局一增加修改间距的样式
                     2. 增加旋转的样式
