@@ -41,20 +41,8 @@ static NSString *mainIndetifier = @"mainViewIdentifier";
     self.mainListView.backgroundColor = [UIColor whiteColor];
     [self.mainListView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:mainIndetifier];
     [self.view addSubview:self.mainListView];
-    mainPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(mainListViewLongpressClick)];
-    mainPress.delegate = self;
-    [self.mainListView addGestureRecognizer:mainPress];
 }
 
--(BOOL )gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
-{
-    touch.view.backgroundColor = [UIColor orangeColor];
-    if (touch.view != self.mainListView) {
-        return YES;
-    }
-    return NO;
-}
-    
 - (void)mainListViewLongpressClick
 {
     switch (mainPress.state) {
@@ -104,12 +92,16 @@ static NSString *mainIndetifier = @"mainViewIdentifier";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:mainIndetifier forIndexPath:indexPath];
+    for (UIView *cView in cell.contentView.subviews) {
+        [cView removeFromSuperview];
+    }
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, (cell.contentView.frame.size.height - 20)/2, cell.contentView.frame.size.width, 20)];
     label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.text = [NSString stringWithFormat:@"%ld",(long)indexPath.item];
     [cell.contentView addSubview:label];
     cell.backgroundColor = [UIColor lightGrayColor];
+    
     return cell;
 }
 
