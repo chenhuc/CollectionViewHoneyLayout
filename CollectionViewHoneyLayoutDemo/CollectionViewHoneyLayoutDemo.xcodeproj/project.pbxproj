@@ -27,6 +27,10 @@
 		2DA523C41DBA10990099D25D /* PolygonViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523AF1DBA10990099D25D /* PolygonViewCell.m */; };
 		2DA523C51DBA10990099D25D /* PolygonViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523B11DBA10990099D25D /* PolygonViewLayout.m */; };
 		2DA523C61DBA10990099D25D /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA523B31DBA10990099D25D /* Tools.m */; };
+		2DF48AE81E56B9B90008D8F3 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DF48AE01E56B9B90008D8F3 /* data.json */; };
+		2DF48AE91E56B9B90008D8F3 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF48AE21E56B9B90008D8F3 /* Model.m */; };
+		2DF48AEA1E56B9B90008D8F3 /* WaterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF48AE51E56B9B90008D8F3 /* WaterLayout.m */; };
+		2DF48AEB1E56B9B90008D8F3 /* WaterLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF48AE71E56B9B90008D8F3 /* WaterLayoutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,13 @@
 		2DA523B11DBA10990099D25D /* PolygonViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonViewLayout.m; sourceTree = "<group>"; };
 		2DA523B21DBA10990099D25D /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		2DA523B31DBA10990099D25D /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		2DF48AE01E56B9B90008D8F3 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		2DF48AE11E56B9B90008D8F3 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		2DF48AE21E56B9B90008D8F3 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		2DF48AE41E56B9B90008D8F3 /* WaterLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterLayout.h; sourceTree = "<group>"; };
+		2DF48AE51E56B9B90008D8F3 /* WaterLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterLayout.m; sourceTree = "<group>"; };
+		2DF48AE61E56B9B90008D8F3 /* WaterLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterLayoutViewController.h; sourceTree = "<group>"; };
+		2DF48AE71E56B9B90008D8F3 /* WaterLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterLayoutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +193,7 @@
 				2DA523AB1DBA10990099D25D /* PolygonView */,
 				2DA523B21DBA10990099D25D /* Tools.h */,
 				2DA523B31DBA10990099D25D /* Tools.m */,
+				2DF48ADF1E56B9B90008D8F3 /* waterfall */,
 			);
 			path = CollectionViewHoneyLayoutDemo;
 			sourceTree = "<group>";
@@ -210,6 +222,28 @@
 				2DA523B11DBA10990099D25D /* PolygonViewLayout.m */,
 			);
 			path = PolygonView;
+			sourceTree = "<group>";
+		};
+		2DF48ADF1E56B9B90008D8F3 /* waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				2DF48AE01E56B9B90008D8F3 /* data.json */,
+				2DF48AE11E56B9B90008D8F3 /* Model.h */,
+				2DF48AE21E56B9B90008D8F3 /* Model.m */,
+				2DF48AE31E56B9B90008D8F3 /* waterLayout */,
+				2DF48AE61E56B9B90008D8F3 /* WaterLayoutViewController.h */,
+				2DF48AE71E56B9B90008D8F3 /* WaterLayoutViewController.m */,
+			);
+			path = waterfall;
+			sourceTree = "<group>";
+		};
+		2DF48AE31E56B9B90008D8F3 /* waterLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2DF48AE41E56B9B90008D8F3 /* WaterLayout.h */,
+				2DF48AE51E56B9B90008D8F3 /* WaterLayout.m */,
+			);
+			path = waterLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +356,7 @@
 				2DA523B71DBA10990099D25D /* Main.storyboard in Resources */,
 				2DA523B51DBA10990099D25D /* Assets.xcassets in Resources */,
 				2DA523B61DBA10990099D25D /* LaunchScreen.storyboard in Resources */,
+				2DF48AE81E56B9B90008D8F3 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,13 +383,16 @@
 			files = (
 				2DA523BE1DBA10990099D25D /* HoneyViewCell.m in Sources */,
 				2D9F79541DEBC1D40073B8F4 /* MoveCollectionViewCell.m in Sources */,
+				2DF48AEB1E56B9B90008D8F3 /* WaterLayoutViewController.m in Sources */,
 				2DA523BF1DBA10990099D25D /* HoneyViewLayout.m in Sources */,
+				2DF48AE91E56B9B90008D8F3 /* Model.m in Sources */,
 				2DA523B41DBA10990099D25D /* AppDelegate.m in Sources */,
 				2DA523C41DBA10990099D25D /* PolygonViewCell.m in Sources */,
 				2DA523B91DBA10990099D25D /* Demo1ViewController.m in Sources */,
 				2D8B04681DE582D3008C157F /* CollectionViewViewController.m in Sources */,
 				2DA523C51DBA10990099D25D /* PolygonViewLayout.m in Sources */,
 				2DA523C61DBA10990099D25D /* Tools.m in Sources */,
+				2DF48AEA1E56B9B90008D8F3 /* WaterLayout.m in Sources */,
 				2DA523C31DBA10990099D25D /* PolygonSingle.m in Sources */,
 				2DA523BA1DBA10990099D25D /* Demo2ViewController.m in Sources */,
 				2DA523B81DBA10990099D25D /* BaseViewController.m in Sources */,
